@@ -1348,7 +1348,7 @@ MonoBehaviour:
   m_YDamping: 1
   m_ZDamping: 1
   m_ScreenX: 0.2494983
-  m_ScreenY: 0.7000093
+  m_ScreenY: 0.6940091
   m_CameraDistance: 9.5
   m_DeadZoneWidth: 0.11
   m_DeadZoneHeight: 0.136
@@ -4972,7 +4972,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1874356045}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.2074113, y: 0.58788455, z: -9.5}
+  m_LocalPosition: {x: 4.2074113, y: 0.5152565, z: -9.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5251,7 +5251,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1918917354}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.2074113, y: 0.58788455, z: -9.5}
+  m_LocalPosition: {x: 4.2074113, y: 0.5152565, z: -9.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 616050726}
@@ -6289,7 +6289,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelBasics.Array.data[1]
       value: 
-      objectReference: {fileID: 2852015517646231002, guid: 819e55a9cdf7f614087d44d136899605,
+      objectReference: {fileID: 2852015517646231002, guid: 0040e4edca4305c489438a476a7d131f,
         type: 3}
     - target: {fileID: 8765330642355610765, guid: 74407e075cd936c44900041c50f63ebb,
         type: 3}

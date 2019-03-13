@@ -763,6 +763,7 @@ MonoBehaviour:
   SoundVolume: 1
   MusicVolume: 1
   headImage: {fileID: 0}
+  headSong: {fileID: 0}
 --- !u!4 &128888579
 Transform:
   m_ObjectHideFlags: 0
@@ -8952,5 +8953,30 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5111233701591174400, guid: d726aa664ff539f409b89d1cb26e78f6,
+        type: 3}
+      propertyPath: configList.Array.data[0].headSong
+      value: 
+      objectReference: {fileID: 8300000, guid: 854fd48ffa4e30b408b39599917ac5f5, type: 3}
+    - target: {fileID: 5111233701591174400, guid: d726aa664ff539f409b89d1cb26e78f6,
+        type: 3}
+      propertyPath: configList.Array.data[3].headSong
+      value: 
+      objectReference: {fileID: 8300000, guid: ae0c5a38ff3972443882658f668484ad, type: 3}
+    - target: {fileID: 5111233701591174400, guid: d726aa664ff539f409b89d1cb26e78f6,
+        type: 3}
+      propertyPath: configList.Array.data[1].headSong
+      value: 
+      objectReference: {fileID: 8300000, guid: 5fc4c685e7aa7db47a2de815977fca45, type: 3}
+    - target: {fileID: 5111233701591174400, guid: d726aa664ff539f409b89d1cb26e78f6,
+        type: 3}
+      propertyPath: configList.Array.data[2].headSong
+      value: 
+      objectReference: {fileID: 8300000, guid: 4b83c4f8bcd42d849870701fe50a547b, type: 3}
+    - target: {fileID: 5111233701591174400, guid: d726aa664ff539f409b89d1cb26e78f6,
+        type: 3}
+      propertyPath: configList.Array.data[7].headSong
+      value: 
+      objectReference: {fileID: 8300000, guid: 67dad6eedcc67014c85928dcc1d1604a, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d726aa664ff539f409b89d1cb26e78f6, type: 3}

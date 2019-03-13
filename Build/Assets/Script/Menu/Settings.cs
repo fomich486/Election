@@ -22,6 +22,7 @@ public class Settings : MonoBehaviour
     public float SoundVolume;
     public float MusicVolume;
     public Sprite headImage;
+    public AudioClip headSong;
     public void PlaySound(string soundName)
     {
         var clip = Resources.Load(soundName) as AudioClip;

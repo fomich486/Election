@@ -16,13 +16,13 @@ public class Paralax : MonoBehaviour
 
     void Start()
     {
-        print(obj.anchoredPosition);
+        //print(obj.anchoredPosition);
     }
 
     void Update()
     {
         direction =  GameController.Instance.myHead.GetDirection();
-        print(direction);
+        //print(direction);
         if (direction > 0)
             if (obj.anchoredPosition.x >= -limits)
                 obj.anchoredPosition = obj.anchoredPosition - Vector2.right * speed;

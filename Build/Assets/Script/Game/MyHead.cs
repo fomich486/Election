@@ -6,7 +6,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class MyHead : MonoBehaviour
 {
-
+    //public AudioClip choiceSong;
     public Rigidbody2D rb { get; private set; }
     float maxSpeed = 20f;
     float minSpeed = 10f;

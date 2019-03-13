@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -62,5 +63,11 @@ public class GameController : MonoBehaviour
     private void StartSettings()
     {
         myHead.GetComponent<SpriteRenderer>().sprite = Settings.Instance.headImage;
+        PlayHeadSound();
+    }
+
+    private void PlayHeadSound()
+    {
+        Settings.Instance.PlaySound(Settings.Instance.headSong.name);
     }
 }

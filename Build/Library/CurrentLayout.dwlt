@@ -111,10 +111,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 987
-  m_MinSize: {x: 679, y: 498}
+  m_MinSize: {x: 683, y: 498}
   m_MaxSize: {x: 14004, y: 14048}
   vertical: 0
-  controlID: 127
+  controlID: 112
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -136,10 +136,10 @@ MonoBehaviour:
     y: 0
     width: 1528
     height: 987
-  m_MinSize: {x: 402, y: 498}
+  m_MinSize: {x: 406, y: 498}
   m_MaxSize: {x: 10002, y: 14048}
   vertical: 1
-  controlID: 128
+  controlID: 113
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -161,10 +161,10 @@ MonoBehaviour:
     y: 0
     width: 1528
     height: 627
-  m_MinSize: {x: 402, y: 224}
-  m_MaxSize: {x: 8002, y: 4024}
+  m_MinSize: {x: 406, y: 224}
+  m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-  controlID: 129
+  controlID: 114
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -214,8 +214,8 @@ MonoBehaviour:
     y: 0
     width: 286
     height: 627
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 204, y: 224}
+  m_MaxSize: {x: 4004, y: 4024}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -387,9 +387,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 253.3145, y: 10.825542, z: -1.1110328}
+    m_Target: {x: 482.71524, y: 0.7496873, z: 9.068744}
     speed: 2
-    m_Value: {x: 253.3145, y: 10.825542, z: -1.1110328}
+    m_Value: {x: 482.71524, y: 0.7496873, z: 9.068744}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -421,9 +421,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: -1}
   m_Size:
-    m_Target: 113.18658
+    m_Target: 10.326706
     speed: 2
-    m_Value: 113.18658
+    m_Value: 10.326706
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -670,7 +670,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: d2e9e3ff446de8ff8a74e8ffaccdf8ff1cd5f8ff882effffd2fbffff58470000d2830100a6b70200c8500300
+      m_ExpandedIDs: a8b3e2ff40bbe2ff6472f5ffb81bfeffe428feffb07effff047fffff1ad5ffff20fbffff22fbffffd2fbfffff4ffffff4846000088460000ec460000364700003c4700005c470000844700001693000048100200
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -732,20 +732,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Prefabs/Interactable/Platform + Vyla
   m_ViewMode: 1
   m_StartGridSize: 67
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Prefabs/Interactable/Platform + Vyla
   m_LastFoldersGridSize: 67
   m_LastProjectPath: C:\Users\Sergey\RepositoryForMyGames\Election\Build
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 193}
-    m_SelectedIDs: 100e0000
-    m_LastClickedID: 3600
-    m_ExpandedIDs: 000000008a0a00009e0a00000a0b0000a00b0000540c0000400d0000560d00006a0d0000ba0d000000ca9a3b
+    scrollPos: {x: 0, y: 405}
+    m_SelectedIDs: f40d0000
+    m_LastClickedID: 3572
+    m_ExpandedIDs: 000000008e0a0000a20a00000e0b0000a40b0000580c00003a0d0000460d00005c0d0000700d0000c20d0000080e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -773,7 +773,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: a4dfffff
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000008a0a00009e0a00000a0b0000a00b0000540c0000400d0000560d00006a0d0000ba0d0000
+    m_ExpandedIDs: 000000008e0a0000a20a00000e0b0000a40b0000580c0000460d00005c0d0000700d0000c20d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -856,7 +856,7 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 40134
+  m_LastSelectedObjectID: 17986
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -878,10 +878,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 401
-    y: 560
-    width: 868
-    height: 260
+    x: 0
+    y: 700
+    width: 1526
+    height: 340
   m_PersistentViewDataDictionary: {fileID: 0}
 --- !u!114 &21
 MonoBehaviour:
