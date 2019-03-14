@@ -66,10 +66,10 @@ public class SnapScrolling : MonoBehaviour
     public void TransferCandidateImage()
     {
         Settings.Instance.headImage = configPanelHeads.configList[selectedPanID].headImage;
-        TransferCandidateSong();
+       
     }
 
-    private void TransferCandidateSong()
+    public void TransferCandidateSong()
     {
         Settings.Instance.headSong = configPanelHeads.configList[selectedPanID].headSong;
     }

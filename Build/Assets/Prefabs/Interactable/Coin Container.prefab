@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4572912369067375803}
   m_Layer: 0
   m_Name: Coin
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -244,6 +244,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7122319851473169014, guid: 14ff744a2e2c921488c95c507e072e0f,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 60bfac2df62419a4fa874e5babddbea9, type: 2}
     - target: {fileID: 7793536139448454159, guid: 14ff744a2e2c921488c95c507e072e0f,
         type: 3}
       propertyPath: EmissionModule.m_Bursts.Array.size
@@ -655,11 +660,6 @@ PrefabInstance:
       propertyPath: ColorModule.gradient.maxGradient.key1.a
       value: 0.9254902
       objectReference: {fileID: 0}
-    - target: {fileID: 7122319851473169014, guid: 14ff744a2e2c921488c95c507e072e0f,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 60bfac2df62419a4fa874e5babddbea9, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14ff744a2e2c921488c95c507e072e0f, type: 3}
 --- !u!4 &2389049071579258246 stripped

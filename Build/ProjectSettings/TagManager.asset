@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Bomb
+  - Birdy
+  - Portal1
+  - Portal2
+  - Coin
+  - Spikes
   layers:
   - Default
   - TransparentFX

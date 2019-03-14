@@ -61,6 +61,19 @@ public class MyHead : MonoBehaviour
             Settings.Instance.PlaySound("GrechkaSound");
             OnBombEnter(col.GetComponent<Bomb>().explosionForce);
         }
+        if (col.tag == "Coin")
+        {
+            Settings.Instance.PlaySound("Coin");
+            PlayerController.Instance.changeDashAmount(1);
+            Destroy(col.gameObject);
+        }
+        if (col.tag == "Spikes")
+        {
+            Settings.Instance.PlaySound("Spikes2");
+            rb.simulated = false;
+            rb.transform.SetParent(col.transform);
+            GameController.Instance.GameOver?.Invoke();
+        }
     }
 
     void OnBombEnter(float force)
