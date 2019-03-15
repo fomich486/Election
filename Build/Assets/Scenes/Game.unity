@@ -1217,7 +1217,7 @@ MonoBehaviour:
   m_YDamping: 1
   m_ZDamping: 1
   m_ScreenX: 0.2494983
-  m_ScreenY: 0.6810085
+  m_ScreenY: 0.6850086
   m_CameraDistance: 9.5
   m_DeadZoneWidth: 0.11
   m_DeadZoneHeight: 0.136
@@ -4036,7 +4036,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1874356045}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.2074113, y: 0.35789287, z: -9.5}
+  m_LocalPosition: {x: 4.2074113, y: 0.40631104, z: -9.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4317,7 +4317,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1918917354}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.2074113, y: 0.35789287, z: -9.5}
+  m_LocalPosition: {x: 4.2074113, y: 0.40631104, z: -9.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 616050726}
@@ -6329,7 +6329,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelBasics.Array.data[1]
       value: 
-      objectReference: {fileID: 2852015517646231002, guid: a565fd0d848f75b47934fa07256f5cec,
+      objectReference: {fileID: 2852015517646231002, guid: 0491cbd156325814692503604c63e10d,
         type: 3}
     - target: {fileID: 8765330642355610765, guid: 74407e075cd936c44900041c50f63ebb,
         type: 3}
@@ -6341,7 +6341,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelBasics.Array.data[0]
       value: 
-      objectReference: {fileID: 2852015517646231002, guid: a565fd0d848f75b47934fa07256f5cec,
+      objectReference: {fileID: 2852015517646231002, guid: 0491cbd156325814692503604c63e10d,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74407e075cd936c44900041c50f63ebb, type: 3}
