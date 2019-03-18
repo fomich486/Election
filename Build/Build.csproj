@@ -249,13 +249,13 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.2f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>C:/Users/foma1/Desktop/game_Election/French-Rev/Build/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>C:/Users/foma1/Desktop/Election/Build/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/Users/foma1/Desktop/game_Election/French-Rev/Build/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/foma1/Desktop/Election/Build/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:/Users/foma1/Desktop/game_Election/French-Rev/Build/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>C:/Users/foma1/Desktop/Election/Build/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.2f1/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -631,22 +631,31 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Script\Club.cs" />
-    <Compile Include="Assets\Script\CountScores.cs" />
-    <Compile Include="Assets\Script\Floor.cs" />
-    <Compile Include="Assets\Script\Follower.cs" />
-    <Compile Include="Assets\Script\GameController.cs" />
-    <Compile Include="Assets\Script\HUD.cs" />
-    <Compile Include="Assets\Script\LevelInteractable\Birdy.cs" />
-    <Compile Include="Assets\Script\LevelInteractable\Bomb.cs" />
-    <Compile Include="Assets\Script\LevelInteractable\Coin.cs" />
-    <Compile Include="Assets\Script\LevelInteractable\MovingPlatform.cs" />
-    <Compile Include="Assets\Script\LevelInteractable\Portals.cs" />
-    <Compile Include="Assets\Script\LevelInteractable\Spikes.cs" />
-    <Compile Include="Assets\Script\LevelInteractable\SpringPlatform.cs" />
-    <Compile Include="Assets\Script\MyHead.cs" />
-    <Compile Include="Assets\Script\PlayerController.cs" />
-    <Compile Include="Assets\Script\RandomGenerator.cs" />
+    <Compile Include="Assets\Script\Game\Floor.cs" />
+    <Compile Include="Assets\Script\Game\GameController.cs" />
+    <Compile Include="Assets\Script\Game\HUD.cs" />
+    <Compile Include="Assets\Script\Game\LevelInteractable\Birdy.cs" />
+    <Compile Include="Assets\Script\Game\LevelInteractable\Bomb.cs" />
+    <Compile Include="Assets\Script\Game\LevelInteractable\Coin.cs" />
+    <Compile Include="Assets\Script\Game\LevelInteractable\MovingPlatform.cs" />
+    <Compile Include="Assets\Script\Game\LevelInteractable\Portals.cs" />
+    <Compile Include="Assets\Script\Game\LevelInteractable\Spikes.cs" />
+    <Compile Include="Assets\Script\Game\LevelInteractable\SpringPlatform.cs" />
+    <Compile Include="Assets\Script\Game\MyHead.cs" />
+    <Compile Include="Assets\Script\Game\Paralax\Paralax.cs" />
+    <Compile Include="Assets\Script\Game\PlayerController.cs" />
+    <Compile Include="Assets\Script\Game\RandomGenerator.cs" />
+    <Compile Include="Assets\Script\Game\ShotPreparation\ForceModifire.cs" />
+    <Compile Include="Assets\Script\Game\ShotPreparation\ShootDirection.cs" />
+    <Compile Include="Assets\Script\Game\StartCameraSetup.cs" />
+    <Compile Include="Assets\Script\Menu\ConfigPanelHeads.cs" />
+    <Compile Include="Assets\Script\Menu\PanelFillerHead.cs" />
+    <Compile Include="Assets\Script\Menu\PanelHeadContainer.cs" />
+    <Compile Include="Assets\Script\Menu\Settings.cs" />
+    <Compile Include="Assets\Script\Menu\SnapScrolling.cs" />
+    <Compile Include="Assets\Script\Menu\UIMenu.cs" />
+    <Compile Include="Assets\Script\ParticleRotation.cs" />
+    <Compile Include="Assets\Script\SoundControll.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Packages\com.unity.cinemachine\Editor\Resources\CMWaveform.compute" />

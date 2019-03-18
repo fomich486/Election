@@ -10,7 +10,7 @@ public class MyHead : MonoBehaviour
     public Rigidbody2D rb { get; private set; }
     float maxSpeed = 20f;
     float minSpeed = 10f;
-
+    public float LastVelocityValue = 0;
     float timer = 0f;
 
 
@@ -21,13 +21,22 @@ public class MyHead : MonoBehaviour
 
     private void FixedUpdate()
     {
-        // LooseSpeed();
         if (Mathf.Abs(rb.angularVelocity) > 450f)
         {
             rb.angularVelocity = UnityEngine.Random.Range (- 125f, -450f);
         }
         CheckSpeed();
     }
+
+    //private void LateUpdate()
+    //{
+    //    if (_lastVelocityValue * rb.velocity.y < 0)
+    //    {
+    //        GameController.Instance.StartCameraSetup.YDirectonCameraFollow(rb.velocity.y);
+    //        GameController.Instance.StartCameraSetup.StartCoroutine(GameController.Instance.StartCameraSetup.YDirectonFlagFolow(rb.velocity.y));
+    //    }
+    //    _lastVelocityValue = rb.velocity.y;
+    //}
 
     private void CheckSpeed()
     {
@@ -125,4 +134,8 @@ public class MyHead : MonoBehaviour
             return 0f;
     }
 
+    public float GetYDirection()
+    {
+        return rb.velocity.y;
+    }
 }

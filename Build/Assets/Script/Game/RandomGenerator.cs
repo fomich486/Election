@@ -14,13 +14,13 @@ public class RandomGenerator : MonoBehaviour
     float nextSpawnTriggerX;
     private void Awake()
     {
-        Spawn(0);
+        Spawn(Random.Range(0, levelBasics.Count));
     }
 
     private void Update()
     {
         if (GameController.Instance.myHead.PositionX() > nextSpawnTriggerX)
-            Spawn(Random.Range(1, levelBasics.Count)); //Here spawn from one
+            Spawn(Random.Range(0, levelBasics.Count)); //Here spawn from one
 
     }
 
