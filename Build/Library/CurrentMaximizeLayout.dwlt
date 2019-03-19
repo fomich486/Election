@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 498}
   m_MaxSize: {x: 18008, y: 14048}
   vertical: 0
-  controlID: 17064
+  controlID: 3649
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -129,7 +129,7 @@ MonoBehaviour:
   m_MinSize: {x: 436, y: 498}
   m_MaxSize: {x: 14006, y: 14048}
   vertical: 1
-  controlID: 17065
+  controlID: 3650
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -151,10 +151,10 @@ MonoBehaviour:
     y: 0
     width: 1273
     height: 489
-  m_MinSize: {x: 406, y: 224}
-  m_MaxSize: {x: 8006, y: 4024}
+  m_MinSize: {x: 402, y: 224}
+  m_MaxSize: {x: 8002, y: 4024}
   vertical: 0
-  controlID: 17033
+  controlID: 3651
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -215,9 +215,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 134.0397, y: -2.2093704, z: -0.0062896945}
+    m_Target: {x: -1.4139897, y: -0.79454136, z: -0.08365561}
     speed: 2
-    m_Value: {x: 134.0397, y: -2.2093704, z: -0.0062896945}
+    m_Value: {x: -1.4139897, y: -0.79454136, z: -0.08365561}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -249,9 +249,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 2.7252135
+    m_Target: 11.320004
     speed: 2
-    m_Value: 2.7252135
+    m_Value: 11.320004
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -314,7 +314,7 @@ MonoBehaviour:
     width: 1032
     height: 813
   m_PersistentViewDataDictionary: {fileID: 0}
-  m_ResetOnNextRepaint: 1
+  m_ResetOnNextRepaint: 0
   m_SelectedAssetPath: Assets/Image/CartoonFaces/lyashko.png
   m_SelectedSpriteRectGUID: c63378fdc9c173c47ae9d0f516d59ad8
   m_LastUsedModuleTypeName: 
@@ -541,7 +541,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 8a83f6ff702ef7fffa65f7ff6e8df7ff60f5f7ffd06bf9ff788bf9ffe6b0f9ff42fdf9ff5e00fafffad2fbfffae2fbff4a30fcffbc82fcff7c84fcff760ffdffde0ffdffe62bfeffca7dfeffaaa2feffbca2feffcea2feffeea2feffb2d3feff34d4feff02fdfeff4afdfeff66fdfeff5800ffff7000ffff461bffff9a1dfffff044ffff16710000fe810000bc82000044940000e6a5000054a6000082b80000c4ef000032f000009c1b0100443701007aba0100b2c9010062d101004cd2010032db0100ac3f0200ec3f02002240020052400200
+      m_ExpandedIDs: fe12f8ff70a1fcff92a1fcff48a3fcff16affcff5eaffcff7aaffcff98affcff20b0fcff9e36fdfff836fdff4037fdff5c37fdff3c3afdff483afdff94eafdff08effdff40faffffaefbffff70300000b293000074bb000078bb0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -589,7 +589,7 @@ MonoBehaviour:
   m_MinSize: {x: 436, y: 274}
   m_MaxSize: {x: 14006, y: 10024}
   vertical: 0
-  controlID: 17066
+  controlID: 3608
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -635,8 +635,8 @@ MonoBehaviour:
     y: 0
     width: 849
     height: 278
-  m_MinSize: {x: 230, y: 250}
-  m_MaxSize: {x: 10000, y: 10000}
+  m_MinSize: {x: 234, y: 274}
+  m_MaxSize: {x: 10004, y: 10024}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -681,20 +681,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Image/CartoonFaces
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 67
   m_LastFolders:
-  - Assets/Image/CartoonFaces
+  - Assets/Scenes
   m_LastFoldersGridSize: 67
   m_LastProjectPath: C:\Users\foma1\Desktop\Election\Build
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: f25f0200
-    m_LastClickedID: 155634
-    m_ExpandedIDs: 0000000048580000585800000459000080590000265a0000305a0000905a000000ca9a3b
+    scrollPos: {x: 0, y: 180}
+    m_SelectedIDs: f22c0000
+    m_LastClickedID: 11506
+    m_ExpandedIDs: 000000000c29000020290000382a0000022b00000c2c0000982c0000e22c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -722,7 +722,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: a4dfffff
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000004858000058580000a25800000459000080590000305a0000425a0000905a0000c65a000000ca9a3b
+    m_ExpandedIDs: 000000000c29000020290000382a0000022b00000c2c0000982c0000e22c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -747,8 +747,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 022ef7ff
-    m_LastClickedInstanceID: -578046
+    m_SelectedInstanceIDs: a22c0000
+    m_LastClickedInstanceID: 11426
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000f6dcfeff302b0000b08000002e0c000080baffffb60f000064150000601800003636ffff76120000907b0000247900002e110000624e0000c40f0000c62a0000b60b00001e0c00008c0a00007c310000fc0d00009e0e0000a0750000123000004a0d0000180d0000400e0000e23b0000da2f0000de2d0000ee0f0000d03b0000722900009a29000000000000ba2a0000940c00004a5a0000
     m_RenameOverlay:
@@ -766,7 +766,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 14}
+      m_ClientGUIView: {fileID: 5}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -856,11 +856,10 @@ MonoBehaviour:
     width: 325
     height: 747
   m_PersistentViewDataDictionary: {fileID: 0}
-  m_ObjectsLockedBeforeSerialization:
-  - {fileID: 0}
-  m_InstanceIDsLockedBeforeSerialization: 022ef7ff
+  m_ObjectsLockedBeforeSerialization: []
+  m_InstanceIDsLockedBeforeSerialization: 
   m_LockTracker:
-    m_IsLocked: 1
+    m_IsLocked: 0
   m_PreviewResizer:
     m_CachedPref: 249
     m_ControlHash: -371814159
