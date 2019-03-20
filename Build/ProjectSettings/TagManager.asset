@@ -10,6 +10,7 @@ TagManager:
   - Portal2
   - Coin
   - Spikes
+  - Floor
   layers:
   - Default
   - TransparentFX

@@ -6,4 +6,5 @@ public class PanelHeadContainer
     public string Name;
     public Sprite headImage;
     public AudioClip headSong;
+    public AudioClip HitSound;
 }

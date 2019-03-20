@@ -7,7 +7,6 @@ public class PlayerController : MonoBehaviour,IPointerDownHandler
 {
     public void OnPointerDown(PointerEventData eventData)
     {
-        print("Touched");
         if ((canControl))
         {
             InputControl();

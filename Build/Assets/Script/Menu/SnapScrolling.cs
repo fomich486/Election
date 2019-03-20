@@ -29,7 +29,7 @@ public class SnapScrolling : MonoBehaviour
         for (int i = 0; i < panCount; i++)
         {
             instPans[i] = Instantiate(panPrefab, transform, false);
-            instPans[i].GetComponent<PanelFillerHead>().FillNewPanel(configPanelHeads.configList[i].headImage, configPanelHeads.configList[i].Name, configPanelHeads.configList[i].headSong);
+            instPans[i].GetComponent<PanelFillerHead>().FillNewPanel(configPanelHeads.configList[i].headImage, configPanelHeads.configList[i].Name, configPanelHeads.configList[i].headSong, configPanelHeads.configList[i].HitSound);
             if (i == 0)
                 continue;
             float x = instPans[i - 1].transform.localPosition.x + panPrefab.GetComponent<RectTransform>().sizeDelta.x + panOffset;
@@ -68,9 +68,13 @@ public class SnapScrolling : MonoBehaviour
         Settings.Instance.headImage = configPanelHeads.configList[selectedPanID].headImage;
        
     }
-
     public void TransferCandidateSong()
     {
         Settings.Instance.headSong = configPanelHeads.configList[selectedPanID].headSong;
+    }
+
+    public void TransferCandidateHitSong()
+    {
+        Settings.Instance.HitSong = configPanelHeads.configList[selectedPanID].HitSound;
     }
 }

@@ -47,6 +47,7 @@ public class MyHead : MonoBehaviour
             timer += Time.fixedDeltaTime;
             if (timer > 3f)
             {
+                Settings.Instance.PlaySound("GoingBack");
                 GameController.Instance.GameOver.Invoke();
                 Destroy(gameObject);
             }
@@ -78,11 +79,18 @@ public class MyHead : MonoBehaviour
         }
         if (col.tag == "Spikes")
         {
-            Settings.Instance.PlaySound("Spikes2");
+            Settings.Instance.PlaySound("Spikes");
             rb.simulated = false;
             rb.transform.SetParent(col.transform);
             GameController.Instance.GameOver?.Invoke();
         }
+    }
+
+    private void OnCollisionExit2D(Collision2D col)
+    {    
+           
+            Settings.Instance.PlaySound(Settings.Instance.HitSong.name);
+        
     }
 
     void OnBombEnter(float force)

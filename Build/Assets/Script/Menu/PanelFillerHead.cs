@@ -8,7 +8,7 @@ public class PanelFillerHead : MonoBehaviour
     [SerializeField]
     private Text nameText;
 
-    public void FillNewPanel(Sprite spr, string str, AudioClip clp)
+    public void FillNewPanel(Sprite spr, string str, AudioClip clp, AudioClip hit)
     {
         headImage.sprite = spr;
         nameText.text = str;

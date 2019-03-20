@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -591,6 +591,7 @@ MonoBehaviour:
   MusicVolume: 0.3
   headImage: {fileID: 0}
   headSong: {fileID: 0}
+  HitSong: {fileID: 0}
 --- !u!4 &128888579
 Transform:
   m_ObjectHideFlags: 0
@@ -7601,6 +7602,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 553252432}
+        m_MethodName: TransferCandidateHitSong
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2096612669
@@ -8056,12 +8068,12 @@ PrefabInstance:
         type: 3}
       propertyPath: configList.Array.data[0].headSong
       value: 
-      objectReference: {fileID: 8300000, guid: 854fd48ffa4e30b408b39599917ac5f5, type: 3}
+      objectReference: {fileID: 8300000, guid: 244be4a9c274d99408a871749878c477, type: 3}
     - target: {fileID: 5111233701591174400, guid: d726aa664ff539f409b89d1cb26e78f6,
         type: 3}
       propertyPath: configList.Array.data[3].headSong
       value: 
-      objectReference: {fileID: 8300000, guid: ae0c5a38ff3972443882658f668484ad, type: 3}
+      objectReference: {fileID: 8300000, guid: a9bc297a14364e244ad809ae4ca55e2d, type: 3}
     - target: {fileID: 5111233701591174400, guid: d726aa664ff539f409b89d1cb26e78f6,
         type: 3}
       propertyPath: configList.Array.data[1].headSong
@@ -8081,7 +8093,7 @@ PrefabInstance:
         type: 3}
       propertyPath: configList.Array.data[6].headSong
       value: 
-      objectReference: {fileID: 8300000, guid: 33a4ec4a9df056d408b8f0a6ede96ccb, type: 3}
+      objectReference: {fileID: 8300000, guid: 5236f3e0b82b83b4784dff5a3bde363a, type: 3}
     - target: {fileID: 5111233701591174400, guid: d726aa664ff539f409b89d1cb26e78f6,
         type: 3}
       propertyPath: configList.Array.data[4].headSong
@@ -8140,5 +8152,45 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: b6db660de51361e4596c848b4d8a6dff,
         type: 3}
+    - target: {fileID: 5111233701591174400, guid: d726aa664ff539f409b89d1cb26e78f6,
+        type: 3}
+      propertyPath: configList.Array.data[0].HitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: e4b2bd78c6f71dc439b5f1c8bd4cfca6, type: 3}
+    - target: {fileID: 5111233701591174400, guid: d726aa664ff539f409b89d1cb26e78f6,
+        type: 3}
+      propertyPath: configList.Array.data[1].HitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 95a3610ca2d122b4da6ccf970bf56197, type: 3}
+    - target: {fileID: 5111233701591174400, guid: d726aa664ff539f409b89d1cb26e78f6,
+        type: 3}
+      propertyPath: configList.Array.data[2].HitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 1502767afb4855743a9ed2a46db45da7, type: 3}
+    - target: {fileID: 5111233701591174400, guid: d726aa664ff539f409b89d1cb26e78f6,
+        type: 3}
+      propertyPath: configList.Array.data[3].HitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 5d5f8a688402be943ada721a1c45c2e2, type: 3}
+    - target: {fileID: 5111233701591174400, guid: d726aa664ff539f409b89d1cb26e78f6,
+        type: 3}
+      propertyPath: configList.Array.data[4].HitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 74e4fe82b0d73a24583f6ce27c93caa3, type: 3}
+    - target: {fileID: 5111233701591174400, guid: d726aa664ff539f409b89d1cb26e78f6,
+        type: 3}
+      propertyPath: configList.Array.data[5].HitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: dc9173a9c5edcbc4ca70f345b2d0b8b4, type: 3}
+    - target: {fileID: 5111233701591174400, guid: d726aa664ff539f409b89d1cb26e78f6,
+        type: 3}
+      propertyPath: configList.Array.data[6].HitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 009f87e463b684f4a9ff2f904dcd5925, type: 3}
+    - target: {fileID: 5111233701591174400, guid: d726aa664ff539f409b89d1cb26e78f6,
+        type: 3}
+      propertyPath: configList.Array.data[7].HitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 96fd9f473d1d9744fa7f476827a55161, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d726aa664ff539f409b89d1cb26e78f6, type: 3}
