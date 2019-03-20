@@ -63,6 +63,7 @@
     <Compile Include="Assets\Script\Game\Floor.cs" />
     <Compile Include="Assets\Script\Game\GameController.cs" />
     <Compile Include="Assets\Script\Game\HUD.cs" />
+    <Compile Include="Assets\Script\Game\Level.cs" />
     <Compile Include="Assets\Script\Game\LevelInteractable\Birdy.cs" />
     <Compile Include="Assets\Script\Game\LevelInteractable\Bomb.cs" />
     <Compile Include="Assets\Script\Game\LevelInteractable\Coin.cs" />

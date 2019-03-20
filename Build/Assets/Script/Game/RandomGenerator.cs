@@ -5,8 +5,8 @@ using UnityEngine;
 public class RandomGenerator : MonoBehaviour
 {
     [SerializeField]
-    List<GameObject> levelBasics;
-
+    List<Level> levelBasics;
+    private LevelDificulty _currentDificulty;
     
     private float groundLength = 216.2902f;
 
@@ -14,20 +14,65 @@ public class RandomGenerator : MonoBehaviour
     float nextSpawnTriggerX;
     private void Awake()
     {
-        Spawn(Random.Range(0, levelBasics.Count));
+        _currentDificulty = LevelDificulty.AClass;
+        Spawn();
     }
 
     private void Update()
     {
         if (GameController.Instance.myHead.PositionX() > nextSpawnTriggerX)
-            Spawn(Random.Range(0, levelBasics.Count)); //Here spawn from one
+            Spawn(); 
 
     }
 
-    void Spawn(int number)
+    private void Spawn()
     {
-        Instantiate(levelBasics[number], nextInstantiatePosition, Quaternion.identity);
+        InstantiateNewLevelDependOnDifficulty();
+        CalculateNextSpawnPosition();
+        ChangeDifficulty();
+    }
+
+    private void InstantiateNewLevelDependOnDifficulty()
+    {
+        if (_currentDificulty != LevelDificulty.All)
+        {
+            List<Level> selectedLevels = new List<Level>();
+            foreach (Level lvl in levelBasics)
+            {
+                if (lvl.Dificulty == _currentDificulty)
+                    selectedLevels.Add(lvl);
+            }
+            int number = Random.Range(0, selectedLevels.Count);
+            Instantiate(selectedLevels[number].gameObject, nextInstantiatePosition, Quaternion.identity);
+        }
+        else
+        {
+            int number = Random.Range(0, levelBasics.Count);
+            Instantiate(levelBasics[number].gameObject, nextInstantiatePosition, Quaternion.identity);
+        }
+    }
+
+    private void CalculateNextSpawnPosition()
+    {
         nextInstantiatePosition += Vector3.right * groundLength;
         nextSpawnTriggerX = nextInstantiatePosition.x - groundLength;
+    }
+
+    private void ChangeDifficulty()
+    {
+        switch (_currentDificulty)
+        {
+            case LevelDificulty.AClass:
+                _currentDificulty = LevelDificulty.BClass;
+                break;
+
+            case LevelDificulty.BClass:
+                _currentDificulty = LevelDificulty.CClass;
+                break;
+
+            case LevelDificulty.CClass:
+                _currentDificulty = LevelDificulty.All;
+                break;
+        }
     }
 }
