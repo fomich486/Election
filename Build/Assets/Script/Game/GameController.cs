@@ -16,6 +16,7 @@ public class GameController : MonoBehaviour
     public UnityEvent ActivatePlayerControl;
     public UnityEvent AfterShootAction;
 
+    public HUD HUD;
     public MyHead myHead;
     public ShootDirection ShootDirection;
     public ForceModifire ForceModifire;

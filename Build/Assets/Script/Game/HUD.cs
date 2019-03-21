@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public enum GameState { Play, Pause };
 public class HUD : MonoBehaviour
-{    
+{
     [Header("Lose Window setup")]
     [SerializeField]
     private Image LoseWindow;
@@ -24,6 +24,8 @@ public class HUD : MonoBehaviour
     private Text dashCountText;
     [SerializeField]
     private Text distanceCountText;
+    [SerializeField]
+    private Text PlusMinusDash;
 
     bool _pause = false;
 
@@ -58,6 +60,7 @@ public class HUD : MonoBehaviour
         else if (!_pause)
         {
             Time.timeScale = 1f;
+            
         }
     }
     public void SetHighScore()
@@ -86,7 +89,7 @@ public class HUD : MonoBehaviour
         float time = 5f;
         float maxValue = 1f;
         float minValue = 0f;
-        float deltaTime = maxValue / 100*time;
+        float deltaTime = maxValue / 100 * time;
         var color = LoseWindow.color;
         color.a = minValue;
         LoseWindow.color = color;
@@ -98,5 +101,28 @@ public class HUD : MonoBehaviour
             yield return null;// new WaitForSeconds(deltaTime); 
         }
     }
+
+    public void ChangeDash(string text, float time)
+    {
+        StartCoroutine(ChangeDashFade(text,time));
+    }
+
+
+    IEnumerator ChangeDashFade(string text, float time)
+    {
+        PlusMinusDash.text = text;
+        PlusMinusDash.gameObject.SetActive(true);
+        float speed = 1 / time;
+        float percent = 0;
+        while (percent < 1)
+        {
+            percent += Time.deltaTime * speed;
+            PlusMinusDash.color = Color.Lerp(Color.white, Color.clear, percent);
+            yield return null;
+        }
+        PlusMinusDash.color = Color.white;
+        PlusMinusDash.gameObject.SetActive(false);
+    }
+
 }
 

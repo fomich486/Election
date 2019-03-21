@@ -66,6 +66,7 @@ public class PlayerController : MonoBehaviour,IPointerDownHandler
     {   
         if (!headFly)
         {
+
             Vector2 dir = GameController.Instance.ShootDirection.GetDirection();
             float forceModif = GameController.Instance.ForceModifire.GetForceModifire();
             Shooted(dir, forceModif);
@@ -77,6 +78,7 @@ public class PlayerController : MonoBehaviour,IPointerDownHandler
         GameController.Instance.myHead.GetImpulse(direction, hitForce * forceModifire );
         GameController.Instance.AfterShootAction.Invoke();
         headFly = !headFly;
+        GameController.Instance.myHead.InstantiateTrail();
         nextDashTime = Time.time;
     }
 
@@ -88,6 +90,7 @@ public class PlayerController : MonoBehaviour,IPointerDownHandler
             {
                 GameController.Instance.myHead.GetImpulse(Vector2.down, dashForce);
                 nextDashTime = Time.time + dashTimer;
+                GameController.Instance.HUD.ChangeDash("-1", 0.5f);
                 changeDashAmount(-1);
             }
         }
@@ -96,5 +99,6 @@ public class PlayerController : MonoBehaviour,IPointerDownHandler
     public void changeDashAmount(int amount)
     {
         DashAvailable += amount;
+        
     }
 }

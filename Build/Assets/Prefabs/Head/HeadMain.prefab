@@ -117,6 +117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8cf6a766d4643645abc72fa7dd1b1ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _trail: {fileID: 0}
   LastVelocityValue: 0
 --- !u!70 &6907704209537271255
 CapsuleCollider2D:
@@ -161,6 +162,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: HeadTail
+      objectReference: {fileID: 0}
+    - target: {fileID: 3942980411629128520, guid: df935c89d1ae5f14cb3db85844d5f074,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7862567606732093266, guid: df935c89d1ae5f14cb3db85844d5f074,
         type: 3}
@@ -220,7 +226,7 @@ PrefabInstance:
     - target: {fileID: 5886479859926293323, guid: df935c89d1ae5f14cb3db85844d5f074,
         type: 3}
       propertyPath: InitialModule.startSize.scalar
-      value: 0.1
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df935c89d1ae5f14cb3db85844d5f074, type: 3}

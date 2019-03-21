@@ -6,7 +6,9 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class MyHead : MonoBehaviour
 {
+
     //public AudioClip choiceSong;
+    public ParticleSystem _trail;
     public Rigidbody2D rb { get; private set; }
     float maxSpeed = 20f;
     float minSpeed = 10f;
@@ -54,6 +56,10 @@ public class MyHead : MonoBehaviour
         }
     }
 
+    public void InstantiateTrail()
+    {
+        _trail.gameObject.SetActive(true);
+    }
     void OnTriggerEnter2D(Collider2D col)
       {
         if (col.tag == "Portal1")
@@ -74,7 +80,7 @@ public class MyHead : MonoBehaviour
         if (col.tag == "Coin")
         {
             Settings.Instance.PlaySound("Coin");
-            PlayerController.Instance.changeDashAmount(1);
+            GameController.Instance.HUD.ChangeDash("+1", 0.5f);
             Destroy(col.gameObject);
         }
         if (col.tag == "Spikes")

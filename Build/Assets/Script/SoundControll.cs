@@ -35,6 +35,8 @@ public class SoundControll : MonoBehaviour
     }
     public void StartMusic()
     {
+        //AS_Music.pitch = Random.Range(0.8f, 1.3f); пробовал разный питч. не помогает
+  
         AS_Music.enabled = true;
     }
 }
