@@ -25,7 +25,9 @@ public class HUD : MonoBehaviour
     [SerializeField]
     private Text distanceCountText;
     [SerializeField]
-    private Text PlusMinusDash;
+    private Text _plusMinusDash;
+    public Text LoseWarning;
+    public Text LoseTimer;
 
     bool _pause = false;
 
@@ -79,6 +81,7 @@ public class HUD : MonoBehaviour
 
     public void LoseWindowShow()
     {
+        LoseWarning.gameObject.SetActive(false);
         LoseWindow.gameObject.SetActive(true);
         finalScoresCount.text = "Рейтинг " + GameController.Instance.myHead.CalculateScore() + "%";
         HeadImage.sprite = Settings.Instance.headImage;
@@ -110,18 +113,18 @@ public class HUD : MonoBehaviour
 
     IEnumerator ChangeDashFade(string text, float time)
     {
-        PlusMinusDash.text = text;
-        PlusMinusDash.gameObject.SetActive(true);
+        _plusMinusDash.text = text;
+        _plusMinusDash.gameObject.SetActive(true);
         float speed = 1 / time;
         float percent = 0;
         while (percent < 1)
         {
             percent += Time.deltaTime * speed;
-            PlusMinusDash.color = Color.Lerp(Color.white, Color.clear, percent);
+            _plusMinusDash.color = Color.Lerp(Color.white, Color.clear, percent);
             yield return null;
         }
-        PlusMinusDash.color = Color.white;
-        PlusMinusDash.gameObject.SetActive(false);
+        _plusMinusDash.color = Color.white;
+        _plusMinusDash.gameObject.SetActive(false);
     }
 
 }

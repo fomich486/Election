@@ -37,11 +37,7 @@ public class PlayerController : MonoBehaviour,IPointerDownHandler
 
     [SerializeField]
     private float hitForce = 5;
-
-    
     public float dashForce = 5;
-
-
     [SerializeField]
     private float dashTimer = 3;
     private float nextDashTime;
@@ -90,7 +86,6 @@ public class PlayerController : MonoBehaviour,IPointerDownHandler
             {
                 GameController.Instance.myHead.GetImpulse(Vector2.down, dashForce);
                 nextDashTime = Time.time + dashTimer;
-                GameController.Instance.HUD.ChangeDash("-1", 0.5f);
                 changeDashAmount(-1);
             }
         }

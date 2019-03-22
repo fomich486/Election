@@ -13,12 +13,12 @@ public class MyHead : MonoBehaviour
     float maxSpeed = 20f;
     float minSpeed = 10f;
     public float LastVelocityValue = 0;
-    float timer = 0f;
+    float timer = 4f;
 
 
     void Awake()
     {
-        rb = GetComponent<Rigidbody2D>();      
+        rb = GetComponent<Rigidbody2D>();            
     }
 
     private void FixedUpdate()
@@ -28,6 +28,7 @@ public class MyHead : MonoBehaviour
             rb.angularVelocity = UnityEngine.Random.Range (- 125f, -450f);
         }
         CheckSpeed();
+        GameController.Instance.HUD.LoseTimer.text = ((int)timer).ToString();
     }
 
     //private void LateUpdate()
@@ -43,11 +44,17 @@ public class MyHead : MonoBehaviour
     private void CheckSpeed()
     {
         if (rb.velocity.x > 0 && rb.velocity.x < 10)
+        {
+            timer = 4f;
+            GameController.Instance.HUD.LoseWarning.gameObject.SetActive(false);
             rb.velocity = new Vector2(10, rb.velocity.y);
+        }
         else if (rb.velocity.x < 0)
         {
-            timer += Time.fixedDeltaTime;
-            if (timer > 3f)
+            GameController.Instance.HUD.LoseWarning.gameObject.SetActive(true);
+            //StartCoroutine(LoseTime());           
+            timer -= Time.fixedDeltaTime;
+            if (timer < 1f)
             {
                 Settings.Instance.PlaySound("GoingBack");
                 GameController.Instance.GameOver.Invoke();
@@ -55,8 +62,20 @@ public class MyHead : MonoBehaviour
             }
         }
     }
+    /*
+    IEnumerator LoseTime()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(1);
+            print(timer);
+            timer--;
+        }
 
-    public void InstantiateTrail()
+    }
+    */
+
+        public void InstantiateTrail()
     {
         _trail.gameObject.SetActive(true);
     }
@@ -81,6 +100,7 @@ public class MyHead : MonoBehaviour
         {
             Settings.Instance.PlaySound("Coin");
             GameController.Instance.HUD.ChangeDash("+1", 0.5f);
+            PlayerController.Instance.changeDashAmount(1);
             Destroy(col.gameObject);
         }
         if (col.tag == "Spikes")
