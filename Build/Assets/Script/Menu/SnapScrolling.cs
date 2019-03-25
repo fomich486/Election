@@ -58,11 +58,14 @@ public class SnapScrolling : MonoBehaviour
             return;
         contentVector.x = Mathf.SmoothStep(contentRect.anchoredPosition.x, pansPos[selectedPanID].x, snapSpeed * Time.fixedDeltaTime);
         contentRect.anchoredPosition = contentVector;
+
     }
     public void Scrolling(bool scroll)
     {
         isScrolling = scroll;
+        
     }
+
     public void TransferCandidateImage()
     {
         Settings.Instance.headImage = configPanelHeads.configList[selectedPanID].headImage;

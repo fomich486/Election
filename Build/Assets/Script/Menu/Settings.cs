@@ -29,4 +29,17 @@ public class Settings : MonoBehaviour
         var clip = Resources.Load(soundName) as AudioClip;
         FindObjectOfType<SoundControll>().PlaySound(clip);
     }
+    
+    public void Kostyl()
+    {
+        StartCoroutine(KostylCoroutine());
+        
+    }
+    IEnumerator KostylCoroutine()
+    {
+        yield return new WaitForSeconds(0.1f);
+        //GameObject.Find("Start_btn").GetComponent<UnityEngine.UI.Button>().onClick.Invoke();
+        GameObject.FindGameObjectWithTag("StartBtn").GetComponent<UnityEngine.UI.Button>().onClick.Invoke();
+    }
+    
 }

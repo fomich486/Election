@@ -47,6 +47,11 @@ public class HUD : MonoBehaviour
         SceneManager.LoadScene(sceneFolder + Level);
     }
 
+    public void ChooseCandidate()
+    {
+        LoadLevel("Menu");
+        Settings.Instance.Kostyl();            
+    }
 
     public void Quit()
     {
@@ -89,6 +94,7 @@ public class HUD : MonoBehaviour
     }
     IEnumerator GameOverPanelFade()
     {
+      
         float time = 5f;
         float maxValue = 1f;
         float minValue = 0f;

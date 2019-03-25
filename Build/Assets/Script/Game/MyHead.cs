@@ -99,13 +99,14 @@ public class MyHead : MonoBehaviour
         if (col.tag == "Coin")
         {
             Settings.Instance.PlaySound("Coin");
-            GameController.Instance.HUD.ChangeDash("+1", 0.5f);
+            GameController.Instance.HUD.ChangeDash("+1", 1.3f);
             PlayerController.Instance.changeDashAmount(1);
             Destroy(col.gameObject);
         }
         if (col.tag == "Spikes")
         {
             Settings.Instance.PlaySound("Spikes");
+            GameController.Instance.HUD.LoseWarning.gameObject.SetActive(false);
             rb.simulated = false;
             rb.transform.SetParent(col.transform);
             GameController.Instance.GameOver?.Invoke();
