@@ -28,6 +28,7 @@ public class HUD : MonoBehaviour
     private Text _plusMinusDash;
     public Text LoseWarning;
     public Text LoseTimer;
+    public Text SorryText;
 
     bool _pause = false;
 
@@ -86,6 +87,7 @@ public class HUD : MonoBehaviour
 
     public void LoseWindowShow()
     {
+        GameController.Instance.soundControll.StopMusic();
         LoseWarning.gameObject.SetActive(false);
         LoseWindow.gameObject.SetActive(true);
         finalScoresCount.text = "Рейтинг " + GameController.Instance.myHead.CalculateScore() + "%";

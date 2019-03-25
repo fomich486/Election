@@ -39,4 +39,8 @@ public class SoundControll : MonoBehaviour
   
         AS_Music.enabled = true;
     }
+    public void StopMusic()
+    {
+        AS_Music.enabled = false;
+    }
 }

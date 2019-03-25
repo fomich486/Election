@@ -51,13 +51,13 @@ public class MyHead : MonoBehaviour
         }
         else if (rb.velocity.x < 0)
         {
-            GameController.Instance.HUD.LoseWarning.gameObject.SetActive(true);
-            //StartCoroutine(LoseTime());           
+            GameController.Instance.HUD.LoseWarning.gameObject.SetActive(true);          
             timer -= Time.fixedDeltaTime;
             if (timer < 1f)
             {
                 Settings.Instance.PlaySound("GoingBack");
                 GameController.Instance.GameOver.Invoke();
+                GameController.Instance.HUD.SorryText.text = "Ваш кандидат заповільний для президентських перегонів";
                 Destroy(gameObject);
             }
         }
@@ -106,6 +106,7 @@ public class MyHead : MonoBehaviour
         if (col.tag == "Spikes")
         {
             Settings.Instance.PlaySound("Spikes");
+            GameController.Instance.HUD.SorryText.text = "Вила Ляшка не щадять нікого. Нам шкода (не дуже)";
             GameController.Instance.HUD.LoseWarning.gameObject.SetActive(false);
             rb.simulated = false;
             rb.transform.SetParent(col.transform);
