@@ -50,8 +50,8 @@ public class HUD : MonoBehaviour
 
     public void ChooseCandidate()
     {
-        LoadLevel("Menu");
-        Settings.Instance.Kostyl();            
+        Settings.Instance.headSelection = true;
+        LoadLevel("Menu");        
     }
 
     public void Quit()
