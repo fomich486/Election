@@ -14,6 +14,7 @@ public class MyHead : MonoBehaviour
     float minSpeed = 10f;
     public float LastVelocityValue = 0;
     float timer = 4f;
+    bool isPlayingClock = true;
 
 
     void Awake()
@@ -51,6 +52,7 @@ public class MyHead : MonoBehaviour
         }
         else if (rb.velocity.x < 0)
         {
+            ClockTicking();
             GameController.Instance.HUD.LoseWarning.gameObject.SetActive(true);          
             timer -= Time.fixedDeltaTime;
             if (timer < 1f)
@@ -62,18 +64,21 @@ public class MyHead : MonoBehaviour
             }
         }
     }
-    /*
-    IEnumerator LoseTime()
-    {
-        while (true)
-        {
-            yield return new WaitForSeconds(1);
-            print(timer);
-            timer--;
-        }
 
+    void ClockTicking()
+    {
+        if (isPlayingClock)
+        {
+            Settings.Instance.PlaySound("ClockTicking");
+            StartCoroutine(Tick());
+        }
     }
-    */
+    IEnumerator Tick()
+    {
+        isPlayingClock = false;
+        yield return new WaitForSeconds(0.82f);
+        isPlayingClock = true;
+    }
 
         public void InstantiateTrail()
     {
