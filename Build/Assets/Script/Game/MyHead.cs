@@ -57,7 +57,7 @@ public class MyHead : MonoBehaviour
             {
                 Settings.Instance.PlaySound("GoingBack");
                 GameController.Instance.GameOver.Invoke();
-                GameController.Instance.HUD.SorryText.text = "Ваш кандидат заповільний для президентських перегонів";
+                GameController.Instance.HUD.SorryText.text = "Ваш кандидат знят з президентської гонки.";
                 Destroy(gameObject);
             }
         }
@@ -106,7 +106,7 @@ public class MyHead : MonoBehaviour
         if (col.tag == "Spikes")
         {
             Settings.Instance.PlaySound("Spikes");
-            GameController.Instance.HUD.SorryText.text = "Вила Ляшка не щадять нікого. Нам шкода (не дуже)";
+            GameController.Instance.HUD.SorryText.text = "Вила Ляшка не щадять нікого.";
             GameController.Instance.HUD.LoseWarning.gameObject.SetActive(false);
             rb.simulated = false;
             rb.transform.SetParent(col.transform);
@@ -143,6 +143,8 @@ public class MyHead : MonoBehaviour
 
     public void GetImpulse(Vector2 direction, float force)
     {
+        if (rb.velocity.y > 0)
+            rb.velocity = new Vector2(rb.velocity.x,0f);
         rb.AddForce(direction * force, ForceMode2D.Impulse);
     }
 
