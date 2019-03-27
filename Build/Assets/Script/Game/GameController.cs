@@ -16,6 +16,7 @@ public class GameController : MonoBehaviour
     public UnityEvent ActivatePlayerControl;
     public UnityEvent AfterShootAction;
 
+    public bool GameOverTriggered = false;
     public HUD HUD;
     public MyHead myHead;
     public ShootDirection ShootDirection;
@@ -46,7 +47,7 @@ public class GameController : MonoBehaviour
     void Update()
     {
         if (UIUpdate != null)
-            UIUpdate.Invoke();
+            UIUpdate.Invoke();                      
     }
     private void EnableControl()
     {
@@ -65,6 +66,11 @@ public class GameController : MonoBehaviour
     {
         myHead.GetComponent<SpriteRenderer>().sprite = Settings.Instance.headImage;
         PlayHeadSound();
+    }
+
+    public void EndGame()
+    {
+        Destroy(Instance.HUD.LoseWarning.gameObject);
     }
 
     private void PlayHeadSound()

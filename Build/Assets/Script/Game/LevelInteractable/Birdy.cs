@@ -59,9 +59,9 @@ public class Birdy : MonoBehaviour
 
         transform.DetachChildren();
         head.TakeHead(rb.velocity.x);
-
         yield return new WaitForSeconds(1);
         GetComponent<CircleCollider2D>().enabled = true;
+
 
     }
 

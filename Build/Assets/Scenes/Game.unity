@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -730,7 +730,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 8.400024, y: -4.200012}
+  m_AnchoredPosition: {x: 8.400024, y: -4.2000732}
   m_SizeDelta: {x: -238.7, y: -64.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &259278812
@@ -884,7 +884,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 395.30005, y: -112.36989}
+  m_AnchoredPosition: {x: 395.30005, y: -112.36987}
   m_SizeDelta: {x: 34.9, y: -225}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &342448462
@@ -1454,7 +1454,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 121.33, y: -27.210022}
+  m_AnchoredPosition: {x: 121.33, y: -27.210083}
   m_SizeDelta: {x: 51.72, y: 54.42}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &506160077
@@ -1565,7 +1565,7 @@ MonoBehaviour:
   m_XDamping: 1
   m_YDamping: 0
   m_ZDamping: 1
-  m_ScreenX: 0.2689984
+  m_ScreenX: 0.5
   m_ScreenY: 0.5
   m_CameraDistance: 9.5
   m_DeadZoneWidth: 0
@@ -1777,7 +1777,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 45}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 12, y: -10.700012}
+  m_AnchoredPosition: {x: 12, y: -10.700073}
   m_SizeDelta: {x: 57, y: 50.200012}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &650188591
@@ -3529,6 +3529,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 643664899}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1520972889
@@ -3733,7 +3744,7 @@ PrefabInstance:
     - target: {fileID: 5146776100633400156, guid: 0be3922076af3324187007eefa284d66,
         type: 3}
       propertyPath: GameOver.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5146776100633400156, guid: 0be3922076af3324187007eefa284d66,
         type: 3}
@@ -3901,8 +3912,45 @@ PrefabInstance:
       propertyPath: HUD
       value: 
       objectReference: {fileID: 1036874295}
+    - target: {fileID: 5146776100633400156, guid: 0be3922076af3324187007eefa284d66,
+        type: 3}
+      propertyPath: GameOver.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5146776100633400156, guid: 0be3922076af3324187007eefa284d66,
+        type: 3}
+      propertyPath: GameOver.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5146776100633400156, guid: 0be3922076af3324187007eefa284d66,
+        type: 3}
+      propertyPath: GameOver.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1553186593}
+    - target: {fileID: 5146776100633400156, guid: 0be3922076af3324187007eefa284d66,
+        type: 3}
+      propertyPath: GameOver.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: EndGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 5146776100633400156, guid: 0be3922076af3324187007eefa284d66,
+        type: 3}
+      propertyPath: GameOver.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0be3922076af3324187007eefa284d66, type: 3}
+--- !u!114 &1553186593 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5146776100633400156, guid: 0be3922076af3324187007eefa284d66,
+    type: 3}
+  m_PrefabInstance: {fileID: 1553186592}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d62a51d7153fae2448fb87ed4c1f38dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1596241240
 GameObject:
   m_ObjectHideFlags: 0
@@ -4679,7 +4727,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -407.00027, y: -112.36989}
+  m_AnchoredPosition: {x: -407.00024, y: -112.36987}
   m_SizeDelta: {x: 0, y: -225}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1772745194
@@ -4948,7 +4996,7 @@ Camera:
     height: 1
   near clip plane: 0.1
   far clip plane: 5000
-  field of view: 65
+  field of view: 30
   orthographic: 0
   orthographic size: 10
   m_Depth: -1
@@ -4974,7 +5022,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1874356045}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.9708815, y: -1.01, z: -9.5}
+  m_LocalPosition: {x: 0, y: -1.01, z: -9.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5231,7 +5279,7 @@ MonoBehaviour:
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 41450502}
   m_Lens:
-    FieldOfView: 65
+    FieldOfView: 30
     OrthographicSize: 10
     NearClipPlane: 0.1
     FarClipPlane: 5000
@@ -5255,7 +5303,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1918917354}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.9708815, y: -1.01, z: -9.5}
+  m_LocalPosition: {x: 0, y: -1.01, z: -9.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 616050726}
@@ -7533,7 +7581,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelBasics.Array.data[6]
       value: 
-      objectReference: {fileID: 1717204797597820605, guid: 839df349c96d19f48b76c4612bfce05f,
+      objectReference: {fileID: 3130658045980579613, guid: 0bd7a7ce2a504574f8302f121d9609d1,
         type: 3}
     - target: {fileID: 8765330642355610765, guid: 74407e075cd936c44900041c50f63ebb,
         type: 3}

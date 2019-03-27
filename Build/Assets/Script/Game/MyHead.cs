@@ -50,6 +50,8 @@ public class MyHead : MonoBehaviour
             GameController.Instance.HUD.LoseWarning.gameObject.SetActive(false);
             rb.velocity = new Vector2(10, rb.velocity.y);
         }
+        if (rb.velocity.x > 0)
+            GameController.Instance.HUD.LoseWarning.gameObject.SetActive(false);
         else if (rb.velocity.x < 0)
         {
             ClockTicking();
@@ -59,7 +61,7 @@ public class MyHead : MonoBehaviour
             {
                 Settings.Instance.PlaySound("GoingBack");
                 GameController.Instance.GameOver.Invoke();
-                GameController.Instance.HUD.SorryText.text = "Ваш кандидат знят з президентської гонки.";
+                GameController.Instance.HUD.SorryText.text = "Ваш кандидат був знятий з президентської гонки.";
                 Destroy(gameObject);
             }
         }
