@@ -86,6 +86,12 @@
     <Compile Include="Assets\Script\Menu\UIMenu.cs" />
     <Compile Include="Assets\Script\ParticleRotation.cs" />
     <Compile Include="Assets\Script\SoundControll.cs" />
+    <Compile Include="Assets\Simple Scroll-Snap\Examples\Example 1 (macOS Finder)\Scripts\FileSelected.cs" />
+    <Compile Include="Assets\Simple Scroll-Snap\Examples\Example 2 (Slot Machine)\Scripts\SlotMachine.cs" />
+    <Compile Include="Assets\Simple Scroll-Snap\Examples\Example 3 (Pinned Map)\Scripts\ZoomOnMouseWheel.cs" />
+    <Compile Include="Assets\Simple Scroll-Snap\Examples\Shared Resources\Scripts\ExpandInformation.cs" />
+    <Compile Include="Assets\Simple Scroll-Snap\Scripts\Runtime\SimpleScrollSnap.cs" />
+    <Compile Include="Assets\Simple Scroll-Snap\Scripts\Runtime\TransitionEffect.cs" />
     <Reference Include="Cinemachine">
       <HintPath>C:/Users/Sergey/RepositoryForMyGames/Election/Build/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
     </Reference>
