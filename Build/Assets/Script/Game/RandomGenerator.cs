@@ -43,6 +43,7 @@ public class RandomGenerator : MonoBehaviour
                     selectedLevels.Add(lvl);
             }
             int number = Random.Range(0, selectedLevels.Count);
+            print(selectedLevels.Count + "  " + number);
             Instantiate(selectedLevels[number].gameObject, nextInstantiatePosition, Quaternion.identity);
         }
         else
